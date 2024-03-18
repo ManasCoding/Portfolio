@@ -19,8 +19,8 @@ body {
     color: #fff;
 }
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    /*min-height: 100vh;*/
+    padding: 2rem 8% 6rem 8%;
 }
 
 /* header*/
@@ -30,7 +30,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 2rem 8%;
     background: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
@@ -69,13 +69,43 @@ header {
     text-shadow: 0 0 30px #0ef;
 }
 
+.navbar-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #0ef; 
+    line-height: 4;
+    right: 3rem;
+    top: 8rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    display: none;
+}
+.navbar-div a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideBottom .5s ease forwards;
+    animation-delay: calc(.2s * var(--i))
+}
+.navbar-div a:hover,
+.navbar-div a.active {
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+}
 /* home section*/
 
 .home {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 18rem 8% 12rem 8%;
+    background-image: linear-gradient(#1f242d,rgb(31, 40, 59));
+    
 }
 .home-content {
     max-width: 600px;
@@ -154,6 +184,7 @@ header {
 }
 .btn {
     display: inline-block;
+    margin-top: 2rem;
     padding: 12px 28px;
     background: #0ef;
     border-radius: 40px;
@@ -311,6 +342,7 @@ header {
 .r1 {
     background-image: url(image/curency.png);
     background-size: cover;
+    background-position: center;
 }
 
 .r2 {
@@ -326,6 +358,7 @@ header {
 .r4 {
     background-image: url(image/amazon.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .r5 {
