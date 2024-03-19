@@ -634,7 +634,7 @@ header {
     }
     .home {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         margin: 1rem;
         gap: 2rem;
     }
